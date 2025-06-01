@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  //font-family
+  --roboto: 'Roboto', sans-serif;
+
+  //font-size
+  ..fs-12: 0.75rem; // 12px
+  --fs-16: 1rem; // base font size 16px
+  --fs-56: 3.5rem; // 56px
+  --fs-88: 5.5rem; // 88px
+
+  //font-weight
+  --fw-400: 400; // regular
+  --fw-700: 700; // bold
+
+  //line-height
+  --lh-100: 100%; // 100% line height
+  --lh-150: 150%; // 150% line height
+
+  //colors
+  --white: #ffffff;
+  --grey: #949494;
+  --blue-700: #36384d;
+  --blue-800: #242742;
+  --red: #ff6155;
+  --gradient: linear-gradient(to right, #ff6a3a, #ff527b);
+
+  //spacing
+  --spacing-100: .5rem; // 8px
+  --spacing-200: 1rem; // 16px
+  --spacing-300: 1.5rem; // 24px
+  --spacing-400: 2rem; // 32px
+  --spacing-500: 2.5rem; // 40px
+  --spacing-600: 3rem; // 48px
+  --spacing-800: 4rem; // 64px
+  --spacing-900: 4.5rem; // 72px
+  --spacing-1300: 6.5rem; // 104px 
+}
+
+.text-preset-1{
+  font-family: var(--roboto);
+  font-size: clamp(var(--fs-88), 5vw, var(--fs-56)); // 56px on large screens, 88px on smaller screens
+  font-weight: var(--fw-700);
+  line-height: var(--lh-100);
+}
+
+.text-preset-2-bold{
+  font-family: var(--roboto);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-150);
+}
+
+.text-preset-2-regular{
+  font-family: var(--roboto);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-150);
+}
+
+.text-preset-3{
+  font-family: var(--roboto);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-700);
+  line-height: var(--lh-150);
+}
