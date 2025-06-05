@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/input.scss","../scss/_global.scss","../scss/_variables.scss"],"names":[],"mappings":"AAAQ;ACCR;EACE;EACA;EACA;;;AAGF;EACE,aCPS;;;ADWX;EACE;EACA,aCHS;EDIT,aCDS;;;ADIX;EACE,WCdQ;EDeR,aCTS;EDUT;;;AAGF;EACE,WCpBQ;EDqBR,aChBS;EDiBT,aCZS;;;ADeX;EACE,WC3BQ;ED4BR,aCrBS;EDsBT,aClBS;;;ADqBX;EACE","file":"output.css"}

@@ -1,0 +1,39 @@
+//reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $roboto;
+}
+
+// Text Presets
+.text-preset-1 {
+  font-size: clamp($-fs-56, 6vw, $fs-88); // 56px on large screens, 88px on smaller screens
+  font-weight: $fw-700;
+  line-height: $lh-100;
+}
+
+.text-preset-2-bold {
+  font-size: $fs-16;
+  font-weight: $fw-700;
+  line-height: Slh-150;
+}
+
+.text-preset-2-regular {
+  font-size: $fs-16;
+  font-weight: $fw-400;
+  line-height: $lh-150;
+}
+
+.text-preset-3 {
+  font-size: $fs-12;
+  font-weight: $fw-700; 
+  line-height: $lh-150;
+}
+
+.img-mobile {
+  width: clamp(375px, 70vw, 528px); // 375px on small screens, 528px on tablet screens
+}
