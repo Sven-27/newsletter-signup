@@ -8,6 +8,7 @@
 body{
   font-family: $roboto;
   background: $blue-700;
+  transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
 
   .container{
     background: $white;
@@ -27,6 +28,34 @@ body{
           content: url("../assets/images/icon-list.svg");
 
         }
+      }
+    }
+
+    input{
+      border: 1px solid $grey;
+
+      &::placeholder {
+        color: $grey;     
+      }
+    }
+
+    button{
+      width: 100%;
+      border: none;
+      outline: none;
+      background: $blue-800;
+      color: $white;
+      padding-block: $spacing-200;
+
+      &:hover{
+        background: $blue-700;
+        color: $white;
+      }
+
+      &:focus,
+      &:active{
+        background: $gradient;
+        color: $white;
       }
     }
   }

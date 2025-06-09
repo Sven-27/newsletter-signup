@@ -32,6 +32,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background: #36384d;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 body .container {
   background: #ffffff;
@@ -49,6 +50,28 @@ body .container ul li {
 }
 body .container ul li:before {
   content: url("../assets/images/icon-list.svg");
+}
+body .container input {
+  border: 1px solid #949494;
+}
+body .container input::placeholder {
+  color: #949494;
+}
+body .container button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #242742;
+  color: #ffffff;
+  padding-block: 1rem;
+}
+body .container button:hover {
+  background: #36384d;
+  color: #ffffff;
+}
+body .container button:focus, body .container button:active {
+  background: linear-gradient(to right, #ff6a3a, #ff527b);
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=output.css.map */
