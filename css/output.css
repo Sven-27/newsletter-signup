@@ -33,11 +33,30 @@ body {
   font-family: "Roboto", sans-serif;
   background: #36384d;
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  min-height: 100vh;
+}
+@media only screen and (width >= 600px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
 }
 body .container {
   background: #ffffff;
+  min-height: 100vh;
 }
-body .container .img-mobile {
+@media only screen and (width >= 600px) {
+  body .container {
+    min-height: unset;
+    padding: 2.5rem !important;
+    min-height: 678px;
+    border-radius: 2rem;
+  }
+}
+body .container .img-mobile-wrapper {
+  border-top-radius: 20px !important;
+}
+body .container .img-mobile-wrapper .img-mobile {
   width: clamp(375px, 70vw, 528px);
 }
 body .container ul {

@@ -5,16 +5,34 @@
   box-sizing: border-box;
 }
 
+// global styles
 body{
   font-family: $roboto;
   background: $blue-700;
   transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  min-height: 100vh;
+
+  @media only screen and (width >=600px) {
+      display: grid;
+      place-items: center;
+    }
 
   .container{
     background: $white;
+    min-height: 100vh;
 
-    .img-mobile {
-      width: clamp(375px, 70vw, 528px); // 375px on small screens, 528px on tablet screens
+    @media only screen and (width >= 600px){
+      min-height: unset; // Remove min-height on larger screens
+      padding: $spacing-500 !important; // Use important to override any other styles
+      min-height: 678px;
+      border-radius: $spacing-400
+    }
+
+    .img-mobile-wrapper{
+      border-top-radius: 20px !important;
+      .img-mobile {
+        width: clamp(375px, 70vw, 528px); // 375px on small screens, 528px on tablet screens
+      }
     }
 
     ul{
