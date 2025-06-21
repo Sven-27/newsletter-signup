@@ -39,6 +39,12 @@ body {
   body {
     display: grid;
     place-items: center;
+    padding-block: 2.5rem;
+  }
+}
+@media only screen and (width >= 992px) {
+  body {
+    padding-block: unset;
   }
 }
 body .container {
@@ -53,30 +59,42 @@ body .container {
     border-radius: 2rem;
   }
 }
-body .container .img-mobile-wrapper {
-  border-top-radius: 20px !important;
+@media only screen and (width >= 992px) {
+  body .container {
+    max-width: 992px !important;
+  }
 }
 body .container .img-mobile-wrapper .img-mobile {
   width: clamp(375px, 70vw, 528px);
 }
-body .container ul {
+@media only screen and (width >= 600px) {
+  body .container .img-mobile-wrapper .img-mobile {
+    border-radius: 1.5rem;
+  }
+}
+@media only screen and (width >= 992px) {
+  body .container form {
+    padding-right: 4rem !important;
+  }
+}
+body .container form ul {
   padding: unset;
 }
-body .container ul li {
+body .container form ul li {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-body .container ul li:before {
+body .container form ul li:before {
   content: url("../assets/images/icon-list.svg");
 }
-body .container input {
+body .container form input {
   border: 1px solid #949494;
 }
-body .container input::placeholder {
+body .container form input::placeholder {
   color: #949494;
 }
-body .container button {
+body .container form button {
   width: 100%;
   border: none;
   outline: none;
@@ -84,11 +102,11 @@ body .container button {
   color: #ffffff;
   padding-block: 1rem;
 }
-body .container button:hover {
+body .container form button:hover {
   background: #36384d;
   color: #ffffff;
 }
-body .container button:focus, body .container button:active {
+body .container form button:focus, body .container form button:active {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   color: #ffffff;
 }

@@ -15,6 +15,11 @@ body{
   @media only screen and (width >=600px) {
       display: grid;
       place-items: center;
+      padding-block: $spacing-500;
+    }
+
+    @media only screen and (width >= 992px) {
+      padding-block: unset;
     }
 
   .container{
@@ -25,55 +30,69 @@ body{
       min-height: unset; // Remove min-height on larger screens
       padding: $spacing-500 !important; // Use important to override any other styles
       min-height: 678px;
-      border-radius: $spacing-400
+      border-radius: $spacing-400;
     }
+
+        @media only screen and (width >=992px) {
+          max-width: 992px !important;
+        }
 
     .img-mobile-wrapper{
-      border-top-radius: 20px !important;
       .img-mobile {
         width: clamp(375px, 70vw, 528px); // 375px on small screens, 528px on tablet screens
+
+        @media only screen and (width >= 600px) {
+          border-radius: $spacing-300;
+        }
+        
       }
     }
 
-    ul{
-      padding: unset;
-      li{
-        list-style: none;
-        display: flex;
-        gap: $spacing-200;
+    form{
+      @media only screen and (width >= 992px) {
+        padding-right: $spacing-800 !important;
+      }
+      
+      ul{
+        padding: unset;
+        li{
+          list-style: none;
+          display: flex;
+          gap: $spacing-200;
 
-        &:before{
-          content: url("../assets/images/icon-list.svg");
+          &:before{
+            content: url("../assets/images/icon-list.svg");
 
+          }
         }
       }
-    }
 
-    input{
-      border: 1px solid $grey;
+      input{
+        border: 1px solid $grey;
 
-      &::placeholder {
-        color: $grey;     
-      }
-    }
-
-    button{
-      width: 100%;
-      border: none;
-      outline: none;
-      background: $blue-800;
-      color: $white;
-      padding-block: $spacing-200;
-
-      &:hover{
-        background: $blue-700;
-        color: $white;
+        &::placeholder {
+          color: $grey;     
+        }
       }
 
-      &:focus,
-      &:active{
-        background: $gradient;
+      button{
+        width: 100%;
+        border: none;
+        outline: none;
+        background: $blue-800;
         color: $white;
+        padding-block: $spacing-200;
+
+        &:hover{
+          background: $blue-700;
+          color: $white;
+        }
+
+        &:focus,
+        &:active{
+          background: $gradient;
+          color: $white;
+        }
       }
     }
   }
