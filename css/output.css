@@ -90,9 +90,14 @@ body .container form ul li:before {
 }
 body .container form input {
   border: 1px solid #949494;
+  outline: none !important;
 }
 body .container form input::placeholder {
   color: #949494;
+}
+body .container form input:focus {
+  border: 1px solid #242742;
+  outline: none !important;
 }
 body .container form button {
   width: 100%;
