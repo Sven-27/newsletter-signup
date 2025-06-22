@@ -88,8 +88,8 @@ body{
 
         &.error {
           color: $red;       
-          border: 1px solid $red;
-          background: $red-opacity;
+          border: 1px solid $red !important;
+          background: $red-opacity !important;
         }
       }
 

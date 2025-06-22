@@ -104,8 +104,8 @@ body .container form input:focus {
 }
 body .container form input.error {
   color: #ff6155;
-  border: 1px solid #ff6155;
-  background: rgba(255, 97, 85, 0.2666666667);
+  border: 1px solid #ff6155 !important;
+  background: rgba(255, 97, 85, 0.2666666667) !important;
 }
 body .container form button {
   width: 100%;

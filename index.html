@@ -16,7 +16,7 @@
     </div>  
     
     <!-- Sign-up form start -->
-    <form onsubmit="handleSubmit()" class="px-4 py-5 d-flex flex-column justify-content-center">
+    <form onsubmit="handleSubmit(event)" class="px-4 py-5 d-flex flex-column justify-content-center">
       <h1 class="text-preset-1">Stay updated!</h1>
        <p class="text-preset-2-regular mt-4">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="text-preset-2-regular mb-4">
@@ -24,9 +24,9 @@
         <li class="mb-2">Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="text-preset-3 form-label d-flex justify-content-between">Email address<span class="error-text">Valid email required</span></label>
-        <input type="text" class="error form-control px-3 py-2 text-preset-2-regular" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@company.com">
+      <div class="mb-3 email-wrapper">
+        <label for="exampleInputEmail1" class="text-preset-3 form-label d-flex justify-content-between">Email address<span class="d-none error-text">Valid email required</span></label>
+        <input type="text" class="form-control px-3 py-2 text-preset-2-regular" id="exampleInputEmail1" value="" aria-describedby="emailHelp" placeholder="email@company.com">
       </div>
       <button type="submit" class="btn">Subscribe to monthly newsletter</button>
   </form>
@@ -45,7 +45,7 @@
   </div>  
   <!-- Success message end -->
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   <script defer src="./script.js"></script>
 </body>
 </html>
