@@ -67,6 +67,12 @@ body{
         }
       }
 
+      label{
+        .error-text{
+          color: $red;
+        }
+      }
+
       input{
         border: 1px solid $grey;
         outline: none !important;
@@ -78,6 +84,12 @@ body{
         &:focus{
           border: 1px solid $blue-800;
           outline: none !important;
+        }
+
+        &.error {
+          color: $red;       
+          border: 1px solid $red;
+          background: $red-opacity;
         }
       }
 
@@ -103,3 +115,4 @@ body{
     }
   }
 }
+

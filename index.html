@@ -16,7 +16,7 @@
     </div>  
     
     <!-- Sign-up form start -->
-    <form onsubmit="handleSubmit(event)" class="px-4 py-5 d-flex flex-column justify-content-center">
+    <form onsubmit="handleSubmit()" class="px-4 py-5 d-flex flex-column justify-content-center">
       <h1 class="text-preset-1">Stay updated!</h1>
        <p class="text-preset-2-regular mt-4">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="text-preset-2-regular mb-4">
@@ -25,8 +25,8 @@
         <li>And much more!</li>
       </ul>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="text-preset-3 form-label ">Email address</label>
-        <input type="text" class="form-control px-3 py-2 text-preset-2-regular" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@company.com">
+        <label for="exampleInputEmail1" class="text-preset-3 form-label d-flex justify-content-between">Email address<span class="error-text">Valid email required</span></label>
+        <input type="text" class="error form-control px-3 py-2 text-preset-2-regular" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@company.com">
       </div>
       <button type="submit" class="btn">Subscribe to monthly newsletter</button>
   </form>

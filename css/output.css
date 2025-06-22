@@ -88,6 +88,9 @@ body .container form ul li {
 body .container form ul li:before {
   content: url("../assets/images/icon-list.svg");
 }
+body .container form label .error-text {
+  color: #ff6155;
+}
 body .container form input {
   border: 1px solid #949494;
   outline: none !important;
@@ -98,6 +101,11 @@ body .container form input::placeholder {
 body .container form input:focus {
   border: 1px solid #242742;
   outline: none !important;
+}
+body .container form input.error {
+  color: #ff6155;
+  border: 1px solid #ff6155;
+  background: rgba(255, 97, 85, 0.2666666667);
 }
 body .container form button {
   width: 100%;
