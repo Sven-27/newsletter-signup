@@ -12,6 +12,7 @@ function validateEmail() {
   else {
     errorText.classList.add('d-none');
     emailInput.classList.remove('error');
+    sessionStorage.setItem("email adress", emailInput.value);
     emailInput.value = ''; // Clear the input field
     // Here you can add the code to handle the form submission, e.g., sending data to a server
     console.log("Form submitted successfully!");
