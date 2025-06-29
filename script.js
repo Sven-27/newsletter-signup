@@ -4,6 +4,7 @@ const submitButton = document.querySelector('button[type="submit"]');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const modal = document.querySelector('.modal');
 const closeButton = document.querySelector('.close-btn');
+const userEmail = document.querySelector('.user-email');
 
 function showModal() {
   modal.classList.add('show');
@@ -39,5 +40,6 @@ function validateEmail() {
 
 function handleSubmit(event) {
   event.preventDefault();
-  validateEmail()  
+  validateEmail();
+  userEmail.textContent = sessionStorage.getItem("email adress");  
 } 
