@@ -107,19 +107,19 @@ body .container form input.error {
   border: 1px solid #ff6155 !important;
   background: rgba(255, 97, 85, 0.2666666667) !important;
 }
-body .container form button {
+body .container .btn {
   width: 100%;
   border: none;
   outline: none;
-  background: #242742;
+  background: #242742 !important;
   color: #ffffff;
   padding-block: 1rem;
 }
-body .container form button:hover {
+body .container .btn:hover {
   background: #36384d;
   color: #ffffff;
 }
-body .container form button:focus, body .container form button:active {
+body .container .btn:focus, body .container .btn:active {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   color: #ffffff;
 }

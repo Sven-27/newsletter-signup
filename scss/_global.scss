@@ -92,27 +92,26 @@ body{
           background: $red-opacity !important;
         }
       }
-
-      button{
-        width: 100%;
-        border: none;
-        outline: none;
-        background: $blue-800;
-        color: $white;
-        padding-block: $spacing-200;
-
-        &:hover{
-          background: $blue-700;
-          color: $white;
-        }
-
-        &:focus,
-        &:active{
-          background: $gradient;
-          color: $white;
-        }
-      }
     }
+        .btn {
+          width: 100%;
+          border: none;
+          outline: none;
+          background: $blue-800 !important;
+          color: $white;
+          padding-block: $spacing-200;
+    
+          &:hover {
+            background: $blue-700;
+            color: $white;
+          }
+    
+          &:focus,
+          &:active {
+            background: $gradient;
+            color: $white;
+          }
+        }
   }
 }
 
