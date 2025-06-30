@@ -123,5 +123,33 @@ body .container .btn:focus, body .container .btn:active {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   color: #ffffff;
 }
+body .container .modal {
+  background: #242742 !important;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+  background: transparent;
+}
+body .container .modal .modal-dialog {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body .container .modal .modal-dialog .modal-content {
+  background: #ffffff;
+  padding: 6.5rem 1.5rem 1.5rem !important;
+  position: relative;
+  border-radius: unset !important;
+  height: 100vh;
+}
+body .container .modal .modal-dialog .modal-content img.success-icon {
+  min-width: 4rem;
+  min-height: 4rem;
+}
+@media only screen and (width >= 600px) {
+  body .container .modal .modal-dialog .modal-content {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=output.css.map */

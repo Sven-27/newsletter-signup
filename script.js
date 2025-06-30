@@ -33,8 +33,6 @@ function validateEmail() {
     sessionStorage.setItem("email adress", emailInput.value);
     showModal();
     emailInput.value = ''; // Clear the input field
-    // Here you can add the code to handle the form submission, e.g., sending data to a server
-    console.log("Form submitted successfully!");
     }
 }
 
