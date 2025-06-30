@@ -108,8 +108,9 @@ body{
 
       &:focus,
       &:active {
-        background: $gradient;
-        color: $white;
+        background: $gradient !important;
+        color: $white !important; 
+      box-shadow: $shadow !important;
       }
     }
     .modal{
@@ -122,25 +123,33 @@ body{
         margin: 0 !important;
         .modal-content{
           background: $white;
-          padding: $spacing-1300 $spacing-300 $spacing-300 !important;
+          padding: $spacing-1300 $spacing-300 $spacing-300;
           position: relative;
-          border-radius: unset !important;
+          border-radius: unset;
           height: 100vh;
 
           img.success-icon{
             min-width: 4rem;
             min-height: 4rem;
-            // padding-bottom: $spacing-400 !important;
-          }
-          
-          @media only screen and (width >= 600px) {
-            width: 100%;
-            max-width: 500px;
-            margin: auto;
           }
         }
       }
-      background: transparent;
+
+      @media screen and (width >= 600px) {
+        .modal-dialog{
+          margin: auto !important;
+          display: flex;
+          align-items: center;
+          height: 100% !important;
+        }
+        .modal-content{
+          padding: $spacing-500 $spacing-400 $spacing-600 !important;
+          border-radius: $spacing-400 !important;
+          width: 504px !important;
+          height: 520px !important;
+        }
+        
+      }
     }
   }
 }

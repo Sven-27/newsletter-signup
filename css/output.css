@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .text-preset-1 {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
   font-weight: 700;
   line-height: 100%;
 }
@@ -120,14 +120,14 @@ body .container .btn:hover {
   color: #ffffff;
 }
 body .container .btn:focus, body .container .btn:active {
-  background: linear-gradient(to right, #ff6a3a, #ff527b);
-  color: #ffffff;
+  background: linear-gradient(to right, #ff6a3a, #ff527b) !important;
+  color: #ffffff !important;
+  box-shadow: 0 16px 32px 0 rgba(255, 97, 85, 0.5019607843) !important;
 }
 body .container .modal {
   background: #242742 !important;
   min-width: 100vw !important;
   min-height: 100vh !important;
-  background: transparent;
 }
 body .container .modal .modal-dialog {
   padding: 0 !important;
@@ -135,20 +135,27 @@ body .container .modal .modal-dialog {
 }
 body .container .modal .modal-dialog .modal-content {
   background: #ffffff;
-  padding: 6.5rem 1.5rem 1.5rem !important;
+  padding: 6.5rem 1.5rem 1.5rem;
   position: relative;
-  border-radius: unset !important;
+  border-radius: unset;
   height: 100vh;
 }
 body .container .modal .modal-dialog .modal-content img.success-icon {
   min-width: 4rem;
   min-height: 4rem;
 }
-@media only screen and (width >= 600px) {
-  body .container .modal .modal-dialog .modal-content {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+@media screen and (width >= 600px) {
+  body .container .modal .modal-dialog {
+    margin: auto !important;
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+  }
+  body .container .modal .modal-content {
+    padding: 2.5rem 2rem 3rem !important;
+    border-radius: 2rem !important;
+    width: 504px !important;
+    height: 520px !important;
   }
 }
 

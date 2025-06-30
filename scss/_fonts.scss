@@ -1,6 +1,6 @@
 // Text Presets
 .text-preset-1 {
-  font-size: clamp($fs-40, 6vw, $fs-56); // 40px on small screens, 56px on large screens
+  font-size: clamp($fs-40, 8vw, $fs-56); // 40px on small screens, 56px on large screens
   font-weight: $fw-700;
   line-height: $lh-100;
 }
